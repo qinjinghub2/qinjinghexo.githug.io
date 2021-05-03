@@ -15,7 +15,7 @@
   <meta name="description" content="链接： https:&#x2F;&#x2F;houxuefeng.com&#x2F;2019&#x2F;07&#x2F;27&#x2F;mac%E4%B8%8B%E6%90%AD%E5%BB%BAhexo-github&#x2F; 本地目录：cd Users&#x2F;qinjing&#x2F;work&#x2F;hexo hexo server -p 4001 提前部署mac与github密钥环境1、首先我得重新在git设置一下身份的名字和邮箱   进入到需要提交的文件夹底下（因为直接打开gi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo部署">
-<meta property="og:url" content="http://example.com/PY.html">
+<meta property="og:url" content="http://example.com/2021/05/03/%E4%BD%BF%E7%94%A8%20Hexo%20%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/index.html">
 <meta property="og:site_name" content="秦景的博客">
 <meta property="og:description" content="链接： https:&#x2F;&#x2F;houxuefeng.com&#x2F;2019&#x2F;07&#x2F;27&#x2F;mac%E4%B8%8B%E6%90%AD%E5%BB%BAhexo-github&#x2F; 本地目录：cd Users&#x2F;qinjing&#x2F;work&#x2F;hexo hexo server -p 4001 提前部署mac与github密钥环境1、首先我得重新在git设置一下身份的名字和邮箱   进入到需要提交的文件夹底下（因为直接打开gi">
 <meta property="og:locale" content="zh_CN">
@@ -25,14 +25,14 @@
 <meta property="og:image" content="https://pic4.zhimg.com/80/v2-c5c9d3eaa1374d6599be94e39a64ae03_1440w.png">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/18819235-543a1ea52ee1d853.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/855/format/webp">
 <meta property="article:published_time" content="2021-05-03T01:55:25.000Z">
-<meta property="article:modified_time" content="2021-05-03T01:55:22.538Z">
+<meta property="article:modified_time" content="2021-05-03T02:06:34.306Z">
 <meta property="article:author" content="秦景">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdn.net/20160712221858092">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/theme-nexmoe/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,gh/theme-nexmoe/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
   
-  <link rel="stylesheet" href="/css/style.css?v=1620006934269">
+  <link rel="stylesheet" href="/css/style.css?v=1620007601136">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -129,10 +129,10 @@
 <p>本地目录：cd Users/qinjing/work/hexo</p>
 <p>hexo server -p 4001</p>
 <h3 id="提前部署mac与github密钥环境"><a href="#提前部署mac与github密钥环境" class="headerlink" title="提前部署mac与github密钥环境"></a>提前部署mac与github密钥环境</h3><p>1、首先我得重新在git设置一下身份的名字和邮箱   进入到需要提交的文件夹底下（因为直接打开git Bash，在没有路径的情况下，根本没！法！改！刚使用git时遇到的坑。。。）<br>git config –global user.name “yourname”</p>
-<p>git config –global user.email “<a href="mailto:&#121;&#x6f;&#117;&#114;&#x40;&#x65;&#109;&#97;&#105;&#x6c;&#46;&#99;&#111;&#x6d;">&#121;&#x6f;&#117;&#114;&#x40;&#x65;&#109;&#97;&#105;&#x6c;&#46;&#99;&#111;&#x6d;</a>“</p>
+<p>git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#x72;&#64;&#101;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#121;&#111;&#x75;&#x72;&#64;&#101;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a>“</p>
 <p>注：yourname是你要设置的名字，your@email是你要设置的邮箱。</p>
 <p>2、删除.ssh文件夹（直接搜索该文件夹）下的known_hosts(手动删除即可，不需要git）</p>
-<p>3、git输入命令<br>$ ssh-keygen -t rsa -C “<a href="mailto:&#121;&#x6f;&#117;&#x72;&#64;&#101;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#121;&#x6f;&#117;&#x72;&#64;&#101;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a>“（请填你设置的邮箱地址）</p>
+<p>3、git输入命令<br>$ ssh-keygen -t rsa -C “<a href="mailto:&#121;&#x6f;&#x75;&#x72;&#64;&#101;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#121;&#x6f;&#x75;&#x72;&#64;&#101;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>“（请填你设置的邮箱地址）</p>
 <p>接着出现：</p>
 <p>Generating public/private rsa key pair.</p>
 <p>Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):</p>
@@ -336,7 +336,7 @@ hexo d  //重新部署到服务器
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
  
 
-<script src="/js/app.js?v=1620006934270"></script>
+<script src="/js/app.js?v=1620007601137"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
