@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/theme-nexmoe/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,gh/theme-nexmoe/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
   
-  <link rel="stylesheet" href="/css/style.css?v=1620005455494">
+  <link rel="stylesheet" href="/css/style.css?v=1620005859418">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -48,7 +48,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>3</div>
+        <div><span>文章</span>4</div>
         <div><span>标签</span>0</div>
         <div><span>分类</span>0</div>
     </div>
@@ -115,6 +115,200 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/2021/05/03/%E4%BD%BF%E7%94%A8%20Hexo%20%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="" class="lazyload">
+                    <h1></h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow-fill">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2021年05月03日</a>
+            <a><i class="nexmoefont icon-areachart"></i>2.2k 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 10 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>链接：</p>
+<p><a target="_blank" rel="noopener" href="https://houxuefeng.com/2019/07/27/mac%E4%B8%8B%E6%90%AD%E5%BB%BAhexo-github/">https://houxuefeng.com/2019/07/27/mac%E4%B8%8B%E6%90%AD%E5%BB%BAhexo-github/</a></p>
+<p>本地目录：cd Users/qinjing/work/hexo</p>
+<p>hexo server -p 4001</p>
+<h3 id="提前部署mac与github密钥环境"><a href="#提前部署mac与github密钥环境" class="headerlink" title="提前部署mac与github密钥环境"></a>提前部署mac与github密钥环境</h3><p>1、首先我得重新在git设置一下身份的名字和邮箱   进入到需要提交的文件夹底下（因为直接打开git Bash，在没有路径的情况下，根本没！法！改！刚使用git时遇到的坑。。。）<br>git config –global user.name “yourname”</p>
+<p>git config –global user.email “<a href="mailto:&#x79;&#x6f;&#x75;&#x72;&#64;&#101;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#x79;&#x6f;&#x75;&#x72;&#64;&#101;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a>“</p>
+<p>注：yourname是你要设置的名字，your@email是你要设置的邮箱。</p>
+<p>2、删除.ssh文件夹（直接搜索该文件夹）下的known_hosts(手动删除即可，不需要git）</p>
+<p>3、git输入命令<br>$ ssh-keygen -t rsa -C “<a href="mailto:&#121;&#111;&#x75;&#114;&#64;&#x65;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#121;&#111;&#x75;&#114;&#64;&#x65;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;</a>“（请填你设置的邮箱地址）</p>
+<p>接着出现：</p>
+<p>Generating public/private rsa key pair.</p>
+<p>Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):</p>
+<p> 如果是下面之类的反馈（或者显示 Hi xxx）：</p>
+<pre><code>The authenticity of host &#39;github.com (207.97.227.239)&#39; can&#39;t be established. RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48. Are you sure you want to continue connecting (yes/no)?
+</code></pre>
+<p>不用紧张，输入 yes 之后,看到下图的结果，就配置成功了：</p>
+<p>提示这个</p>
+<p>请直接按下回车</p>
+<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，用记事本打开id_rsa.pub</p>
+<p>将全部的内容复制</p>
+<p>4、打开<a target="_blank" rel="noopener" href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a></p>
+<p>进入ssh设置</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://img-blog.csdn.net/20160712221858092" alt="img" class="lazyload"></p>
+<p>在key中将刚刚复制的粘贴进去</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://img-blog.csdn.net/20160712222026735" alt="img" class="lazyload"></p>
+<p>点击add ssh key，颜色</p>
+<pre><code>$\textcolor&#123;RedOrange&#125;&#123;橙红色&#125; $
+</code></pre>
+<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><p><strong>在 GitHub 上建立仓库</strong></p>
+<p>与 GitHub 建立好连接之后，就可以方便的使用它提供的 Pages 服务，GitHub Pages 分两种，一种是用你的 GitHub 用户名建立的 username.github.io 这样的用户&amp;组织站点，另一种是依附项目的 Pages。</p>
+<p>想建立个人博客是用的第一种，形如 $\textcolor{RedOrange}{username.github.io} $ 这样的可访问的站点，每个用户名下面只能建立一个。如下图所示：</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="http://mmbiz.qpic.cn/mmbiz_png/icic13vic5h8JGYvicsPUQWlFXIqjCibYxra5pXaYO3LclM0q5uyiaic7haB9iafj7XZyOzz5SUxc9ibibbHNNyc0rGibFPIg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片" class="lazyload"></p>
+<h5 id="配置-SSH"><a href="#配置-SSH" class="headerlink" title="配置 SSH"></a><strong>配置 SSH</strong></h5><p>我们如何让本地 git 项目与远程的 GitHub 建立联系呢？方法是用 SSH。打开命令行，输入以下命令：</p>
+<pre><code class="配置">ssh -T git@github.com
+</code></pre>
+<h3 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h3><p>首先，需要安装node.js、npm和Git</p>
+<ul>
+<li><p>Git可直接下载安装包进行安装。<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">点击下载</a>。安装后，需要下载xcode才可以。否则在使用中会遇到错误。这里我出现的问题是起初没有下载xcode，在后面初始化的时候，一直提示找不到Git，下载了xcode也不行，后来我打开了xcode，然后在关闭，就可以了。因为是小白，具体原因不明</p>
+</li>
+<li><p>接下来安装node.js。打开终端，输入命令</p>
+<pre><code>npm install -g hexo-cli
+</code></pre>
+</li>
+</ul>
+<p>这里遇到的问题是，提示没有权限，于是在上面的命令增加了sudo，如下:</p>
+<pre><code>sudo npm install -g hexo-cli
+</code></pre>
+<h3 id="二、使用-Hexo-创建博客框架"><a href="#二、使用-Hexo-创建博客框架" class="headerlink" title="二、使用 Hexo 创建博客框架"></a>二、<strong>使用 Hexo 创建博客框架</strong></h3><h5 id="Hexo-安装"><a href="#Hexo-安装" class="headerlink" title="Hexo 安装"></a><strong>Hexo 安装</strong></h5><p>打开命令行，依次输入以下命令：</p>
+<pre><code>cd /
+npm install hexo-cli -g
+</code></pre>
+<h5 id="Hexo-部署"><a href="#Hexo-部署" class="headerlink" title="Hexo 部署"></a><strong>Hexo 部署</strong></h5><p>Hexo 的部署可采用如下方法，输入命令：</p>
+<p>hexo init [文件名]。</p>
+<p>打开控制台，依次输入以下命令：</p>
+<pre><code>cd /
+hexo init Hexo
+</code></pre>
+<p>回车后出现该提示则表示正确：</p>
+<p>注册并登陆GitHub账号后，新建仓库，名称必须为 user.github.io，如 hxf236386915.github.io。<br>打开文件_config.yml，翻到最底下，将下面代码复制进去。</p>
+<pre><code>deploy:
+type: git
+repository: https://github.com/github名称/github名称.github.io.git
+branch: master
+</code></pre>
+<p>部署成功之后，Hexo 会自动在目标文件夹建立博客网站所需要的所有文件。此时可以通过输入以下命令在本地进行预览（在刚才创建的文件夹里）：</p>
+<pre><code>hexo generate 
+hexo server
+</code></pre>
+<p>此时打开浏览器，在浏览器地址栏输入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> （默认端口为4000）, 便可以看到最原始的博客了。以后发表博文想先预览，也可以通过 hexo server 在本地先跑起来，看看效果。</p>
+<h1 id="三、上传代码"><a href="#三、上传代码" class="headerlink" title="三、上传代码"></a>三、上传代码</h1><p>注册并登陆GitHub账号后，新建仓库，名称必须为 user.github.io，如 hxf236386915.github.io。<br>打开文件_config.yml，翻到最底下，将下面代码复制进去。</p>
+<pre><code>deploy:
+type: git
+repository: https://github.com/hxf236386915/hxf236386915.github.io.git
+branch: master
+</code></pre>
+<p>其中将repository中hxf236386915改为自己的用户名，注意type、repository、branch后均有空格。通过如下命令在youblogfiles下生成静态文件并上传到服务器。</p>
+<pre><code>hexo g
+hexo d
+</code></pre>
+<p>若执行hexo g出错则执行npm install hexo –save，若执行hexo d出错则执行npm install hexo-deployer-git –save。错误修正后再次执行hexo g和hexo d上传到服务器。</p>
+<p>若未关联GitHub，执行hexo d时会提示输入GitHub账号用户名和密码，即:</p>
+<pre><code>username for &#39;https://github.com&#39;:
+password for &#39;https://github.com&#39;:
+</code></pre>
+<p>hexo d执行成功后便可通过<a target="_blank" rel="noopener" href="https://hxf236386915.github.io访问博客,看到的内容和http//localhost:4000%E7%9B%B8%E5%90%8C%E3%80%82">https://hxf236386915.github.io访问博客，看到的内容和http://localhost:4000相同。</a></p>
+<p>注意：这里可能会出现这种需要输入账号密码的情况</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://pic4.zhimg.com/80/v2-c5c9d3eaa1374d6599be94e39a64ae03_1440w.png" alt="img" class="lazyload"></p>
+<p>输入github的账号密码就可以了，记住那里输入密码的时候光标是不会移动的，只要你输入了就好，不要以为没输入上：）</p>
+<h1 id="四、添加ssh-keys-到github"><a href="#四、添加ssh-keys-到github" class="headerlink" title="四、添加ssh keys 到github"></a>四、添加ssh keys 到github</h1><p>添加ssh key后不需要每次更新博客再输入用户名和密码。首先检查本地是否包含ssh keys。如果存在则直接将ssh key添加到GitHub之中，否则新生成ssh key。</p>
+<p>输入一下代码，之后按照要求输入账号和两次密码</p>
+<pre><code>ssh-keygen -t rsa -C &quot;your_email@exampl&quot;
+</code></pre>
+<p>完成之后，打开博客文件夹，将your_email.pub中的内容复制到github中的设置-deploy keys中即可。</p>
+<p>然后执行如下代码</p>
+<pre><code>hexo g
+hexo d
+</code></pre>
+<h1 id="五、绑定域名"><a href="#五、绑定域名" class="headerlink" title="五、绑定域名"></a>五、绑定域名</h1><p>首先，在博客文件夹中创建CNAME文件，不可以有后缀。然后将域名粘贴进文件中。并上传至github。</p>
+<p>然后，在通过阿里云进行解析。详情如下</p>
+<pre><code>记录类型：CNAME
+主机记录：@
+解析线路：默认
+记录值：http://hxf236386915.github.io
+</code></pre>
+<h1 id="六、安装配置主题"><a href="#六、安装配置主题" class="headerlink" title="六、安装配置主题"></a>六、安装配置主题</h1><p>这里使用的的是hexo中的theme主题。命令如下</p>
+<pre><code>cd youblogflie（你的博客文件夹）
+git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre>
+<p>将blog目录下_config.yml里的theme的名称landscape更改为next。</p>
+<p>执行如下命令（每次部署文章的步骤）</p>
+<p>截图里的记录值都是yourname.github.io.上述两条解析保证你的域名带不带www都能正常解析.<br>然后在hexo/themes/landscape/source目录下新建CNAME文件，内容为yourhost.me,即自己域名.<br>注意:这个CNAME文件必不可少，每次运行generate的时候会把这个路径下的东西copy到public下.</p>
+<pre><code>hexo clean
+hexo g  //生成缓存和静态文件
+hexo d  //重新部署到服务器
+</code></pre>
+<p>当本地博客部署到服务器后，网页端无变化时可以采用下述命令。</p>
+<pre><code>hexo clean  //清楚缓存文件(db.json)和已生成的静态文件(public)
+</code></pre>
+<p>配置主题可在主题官网中查看相应教程，需要注意的是站点配置文件和主题配置文件。<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">点击进入next官网</a></p>
+<p>站点配置文件就是博客文件夹目录下的_config.yml。<br>主题配置文件为，博客文件夹-theme-next下的_config.yml</p>
+<h1 id="七、写作"><a href="#七、写作" class="headerlink" title="七、写作"></a>七、写作</h1><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands">https://hexo.io/zh-cn/docs/commands</a></p>
+<p>首先创建一个md文件，命令如下：</p>
+<pre><code>hexo new 文件名
+</code></pre>
+<p>然后在博客文件夹目录下的source-_posts打开。</p>
+<p>title：代表标题</p>
+<p>date：日期</p>
+<p>tags：[标签1，标签2]</p>
+<p>categories：分类</p>
+<p>正文</p>
+<p>超链接：</p>
+<pre><code>[F](https://houxuefeng.com)
+</code></pre>
+<p>图片：</p>
+<pre><code>![1](http://pvacs1eu6.bkt.clouddn.com/WechatIMG57.jpeg)
+</code></pre>
+<p>或者</p>
+<pre><code>&lt;img src=&quot;http://pvacs1eu6.bkt.clouddn.com/WechatIMG57.jpeg&quot; width = 100% div align=center/&gt;
+</code></pre>
+<p>下面这个可以调整大小。</p>
+<p>音乐：</p>
+<pre><code>&lt;audio id=&quot;audio&quot; autoplay=&quot;autoplay&quot;&gt;
+&lt;source src=&quot;http://qzone.haoduoge.com/music1/2015-04-23/1429774382.mp3&quot; type=&quot;audio/mp3&quot;&gt;&lt;/source&gt;
+&lt;/audio&gt;
+</code></pre>
+<h1 id="八、修改配置信息"><a href="#八、修改配置信息" class="headerlink" title="八、修改配置信息"></a>八、修改配置信息</h1><p><a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1671783201505202522&amp;wfr=spider&amp;for=pc">https://baijiahao.baidu.com/s?id=1671783201505202522&amp;wfr=spider&amp;for=pc</a></p>
+<ul>
+<li>git bash，进入到博客的本地目录中,</li>
+</ul>
+<blockquote>
+<p>cd 到你的博客目录路径</p>
+</blockquote>
+<ul>
+<li>然后使用clone的方法将想要的主题下载下来。（我选用的是NexT主题）</li>
+<li>找到对应的主题仓库获取http地址,下面有三种主题仓库的地址<br> <a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://github.com/blinkfox/hexo-theme-matery">matery</a><br> <a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://github.com/fluid-dev/hexo-theme-fluid">fluid</a><br> <a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://github.com/iissnan/hexo-theme-next">next</a></li>
+</ul>
+<ul>
+<li>git clone 然后使用clone的方法将想要的主题下载下来。（我选用的是fluid主题）</li>
+</ul>
+<pre><code class="php"> git clone https://github.com/fluid-dev/hexo-theme-fluid.git
+</code></pre>
+<ul>
+<li>修改配置文件<br> git克隆完成后，打开当前目录下的“_config.yml”配置文件。</li>
+</ul>
+<pre><code class="undefined">theme: 改成对应的主题(“：”冒号之后空格不可少）
+</code></pre>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://upload-images.jianshu.io/upload_images/18819235-543a1ea52ee1d853.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/855/format/webp" alt="img" class="lazyload"></p>
+<h2 id="Hexo博客的根目录-Gitbash执行下面命令-部署到github上"><a href="#Hexo博客的根目录-Gitbash执行下面命令-部署到github上" class="headerlink" title="Hexo博客的根目录,Gitbash执行下面命令(部署到github上)"></a>Hexo博客的根目录,Gitbash执行下面命令(部署到github上)</h2><pre><code class="undefined">hexo g
+</code></pre>
+<pre><code class="undefined"> hexo d
+</code></pre>
+
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/2021/05/02/hahah/">
@@ -222,7 +416,7 @@
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
  
 
-<script src="/js/app.js?v=1620005455495"></script>
+<script src="/js/app.js?v=1620005859419"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
